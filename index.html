@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>How to order eggs</title>
+  <link type="text/css" rel="stylesheet" href="assets/stylesheets/main.css"/>
+</head>
+<body ng-app="eggsApp" class="ng-scope">
+  <div ng-view class="ng-scope">
+    <header class="ng-scope">
+      <h1>How to Order Eggs</h1>
+      <div class="subheader">An illustrated guide on ways to cook eggs</div>
+    </header>
+    <ul class="egg_grid ng-scope">
+      <li class="egg ng-scope bg-red" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/hard_boiled.449f78e4.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Hard Boiled</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Cooked in boiling water with the shell on until yolk is completely set</div>
+      </li>
+      <li class="egg ng-scope bg-green" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/soft_boiled.1f753add.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Soft Boiled</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Cooked in boiling water with the shell on until whites are set, but yolk is still liquid</div>
+      </li>
+      <li class="egg ng-scope bg-blue" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/sunny_side_up.73579f5a.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Sunny Side Up</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Fried without ever flipping the egg, whites are cooked but yolk remains liquid</div>
+      </li>
+      <li class="egg ng-scope bg-purple" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/poached.84cd498d.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Poached</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Removed from shell, then cooked in hot water or some other liquid</div>
+      </li>
+      <li class="egg ng-scope bg-teal" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/over_easy.f64e5c3e.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Over Easy</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Fried until white is cooked, then flipped over momentarily so only the top of yolk is set</div>
+      </li>
+      <li class="egg ng-scope bg-salmon" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/over_hard.c410a755.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Over Hard</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Fried until white is cooked, then flipped and cooked until yolk is completely set</div>
+      </li>
+      <li class="egg ng-scope bg-yellow" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/scrambled.1e775a7a.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Scrambled</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Raw eggs beaten so the egg whites and yolks are mixed, then cooked in a skillet</div>
+      </li>
+      <img ng-src="images/omelette.ca8d80cf.svg" alt="" src="images/omelette.ca8d80cf.svg">
+      <li class="egg ng-scope bg-navy" ng-class="egg.background" ng-repeat="egg in eggs">
+        <div class="image">
+          <img src="http://hansonwu.com/howtoordereggs/images/omelette.ca8d80cf.svg"/>
+        </div>
+        <div class="description">
+          <h2 class="name ng-binding">Omlette</h2>
+          <div class="divider"></div>
+          <div class="explanation ng-binding">Similar to scrambled, but left flat and then folded and filled with a variety of ingredients</div>
+      </li>
+    </ul>
+    <footer class="ng-scope">
+      <div class="credit">
+        How to order eggs is a project made by <a href="https://dribble.com/hansonwu" alt="Dribble">Hanson Wu</a> and copied by Terri Kolb
+      </div>
+  </div>
+</body>
+</html>

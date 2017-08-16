@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600i');
+
+/*BASE STYLES AND REFERENCES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$text-color: white;
+
+@mixin blockcolor($background-color) {
+  background-color: $background-color;
+}
+
+ /*HEADER*/
+header h1, header div {
+  color: lightsalmon;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-family: Muli;
+  font-style: italic;
+}
+
+/*EGG BLOCKS*/
+.egg_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+}
+
+.egg {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.name {
+  font-family: Muli;
+  display: flex;
+  justify-content: center;
+  color: $text-color;
+}
+
+.explanation {
+  @extend .name;
+  flex-wrap: wrap;
+}
+
+.description {
+  padding: 30px;
+}
+
+.image {
+  padding-top: 30px;
+  display: flex;
+  img {
+    height: 150px;
+    display: flex;
+  }
+}
+
+.bg-red {
+  @include blockcolor(#ec7471)
+}
+
+.bg-green {
+  @include blockcolor(#93dc88);
+}
+
+.bg-blue {
+  @include blockcolor(#85cdf4);
+}
+
+.bg-purple {
+  @include blockcolor(#c097cc);
+}
+
+.bg-teal {
+  @include blockcolor(#2bcbc5);
+}
+
+.bg-salmon {
+  @include blockcolor(#f3bfb9);
+}
+
+.bg-yellow {
+  @include blockcolor(#e3d578);
+}
+
+.bg-navy {
+  @include blockcolor(#7191e4);
+}
+
+/*FOOTER*/
+@import "_footer.scss";
+
+/*LETS RWD IT UP*/
+@media (max-width: 800px) {
+  .egg {
+    width: 100%;
+  }
+}
